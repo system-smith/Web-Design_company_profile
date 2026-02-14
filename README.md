@@ -1,7 +1,7 @@
-# CampusNest - Moi University Housing Marketplace
+# Renthub - Moi University Housing Marketplace
 
 ## 📌 Project Overview
-CampusNest is a web-based housing marketplace designed for Moi University students.  
+Renthub is a web-based housing marketplace designed for Moi University students.  
 It connects **students** looking for affordable housing with **landlords** who want to list and manage their properties.  
 
 The platform provides:
@@ -12,7 +12,7 @@ The platform provides:
 ---
 
 ## 🎯 Goals
-- Simplify the process of finding campus housing.
+- Simplify the process of finding rentals around Moi university.
 - Provide verified and up-to-date information on available houses.
 - Enable landlords to manage listings efficiently.
 - Encourage collaboration and learning through real-world web development.

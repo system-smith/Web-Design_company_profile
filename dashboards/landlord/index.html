@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landlord Portal - Moi Campus Homes</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/dashboard.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>🏠 Moi Campus Homes</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../listings.html">Listings</a></li>
+        <li><a href="index.html" class="active">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="dashboard-wrapper">
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <div class="user-profile">
+          <div class="avatar-circle">PK</div>
+          <h3>Peter Kipchoge</h3>
+          <p class="role">Verified Landlord</p>
+        </div>
+
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="#properties" class="nav-link">🏘️ My Properties</a></li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+          <a href="../../dashboard.html" class="btn-logout">Switch Profile</a>
+        </div>
+      </aside>
+
+      <section class="dashboard-content">
+        
+        <header class="content-header">
+           <div class="welcome-text">
+             <h2>Welcome back, Peter! 👋</h2>
+             <p>Here is what's happening with your properties today.</p>
+           </div>
+           <button onclick="window.location.href='../../add_property.html'">
+              Add Property
+          </button>
+        </header>
+
+        <section id="properties" class="content-section">
+          <h3>My Properties</h3>
+          <div class="properties-list"></div>
+        </section>
+
+      </section>
+    </div>
+  </main>
+
+  <script src="../../js/dashboard.js"></script>
+  <script src="../../js/propertyManager.js"></script>
+  <script>
+    // Load landlord's properties on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      loadLandlordProperties();
+      // Make property items clickable to show details
+      document.querySelector('.properties-list').addEventListener('click', function(e) {
+        const item = e.target.closest('.property-item');
+        if (item) {
+          const details = item.querySelector('.property-details');
+          if (details) {
+            alert(details.innerText); // Simple details popup, can be replaced with a modal
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

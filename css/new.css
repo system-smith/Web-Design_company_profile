@@ -1,0 +1,65 @@
+/* Container to center everything on the screen */
+.selection-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh; /* Keeps it centered vertically */
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.brand-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.brand-header h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.house-emoji {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Button Styling */
+.button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-selection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #4caf50; /* The green from your image */
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: transform 0.2s, background-color 0.2s;
+  border: none;
+}
+
+.btn-selection:hover {
+  background-color: #43a047;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-selection .icon {
+  font-size: 1.4rem;
+}

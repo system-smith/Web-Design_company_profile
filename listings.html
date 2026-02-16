@@ -37,12 +37,7 @@
         </div>
         <div class="form-group">
           <label for="price">Price Range:</label>
-          <select id="price">
-            <option value="">Any</option>
-            <option value="5000-10000">Ksh 5,000 - 10,000</option>
-            <option value="10000-15000">Ksh 10,000 - 15,000</option>
-            <option value="15000-20000">Ksh 15,000 - 20,000</option>
-          </select>
+            <input type="text" id="price" placeholder="Enter max price (e.g. 12000)">
         </div>
         <div class="form-group">
           <label for="type">Property Type:</label>
@@ -51,6 +46,7 @@
             <option value="single">Single Room</option>
             <option value="shared">Shared Room</option>
             <option value="apartment">Apartment</option>
+            <option value="bedsitter">Bedsitter</option>
           </select>
         </div>
         <button type="submit">Search</button>
@@ -62,67 +58,75 @@
       <div class="listings-grid">
         <!-- Stretford (Mabs) -->
         <div class="listing-card">
-          <img src="images/stretford.jpg" alt="Stretford House">
+          <img src="images/stertford.jpg" alt="Stretford House">
           <h4>Stretford</h4>
-          <p class="price">Ksh 12,000/month</p>
+          <p class="price">Ksh 3,000/month</p>
           <p class="location">Mabs, 10 min walk to Moi University</p>
-          <a href="stretford.html" class="details-btn">View Details</a>
+          <p class="type">Single Room</p>
+          <a href="./houses/stretford.html" class="details-btn">View Details</a>
         </div>
         <!-- Diamond (Stage) -->
         <div class="listing-card">
           <img src="images/diamond.jpg" alt="Diamond House">
           <h4>Diamond</h4>
-          <p class="price">Ksh 15,000/month</p>
+          <p class="price">Ksh 5,500/month</p>
           <p class="location">Stage, 10 min walk to Moi University</p>
-          <a href="property.html" class="details-btn">View Details</a>
+          <p class="type">Bedsitter</p>
+          <a href="./houses/diamond.html" class="details-btn">View Details</a>
         </div>
         <!-- Robo (Stage) -->
         <div class="listing-card">
-          <img src="images/robo.jpg" alt="Robo House">
+          <img src="images/house-mabs.jpg" alt="Robo House">
           <h4>Robo</h4>
-          <p class="price">Ksh 8,000/month</p>
+          <p class="price">Ksh 4,000/month</p>
           <p class="location">Stage, on-campus, shared rooms</p>
-          <a href="property.html" class="details-btn">View Details</a>
+          <p class="type">Shared Room</p>
+          <a href="./houses/robo.html" class="details-btn">View Details</a>
         </div>
         <!-- Bahamas (Stage) -->
         <div class="listing-card">
           <img src="images/bahamas.jpg" alt="Bahamas House">
           <h4>Bahamas</h4>
-          <p class="price">Ksh 18,000/month</p>
+          <p class="price">Ksh 4,500/month</p>
           <p class="location">Stage, luxury apartment, 15 min drive</p>
-          <a href="property.html" class="details-btn">View Details</a>
+          <p class="type">Bedsitter</p>
+          <a href="./houses/bahamas.html" class="details-btn">View Details</a>
         </div>
         <!-- Gemstone (Stage) -->
         <div class="listing-card">
           <img src="images/room-1.jpg" alt="Gemstone House">
           <h4>Gemstone</h4>
-          <p class="price">Ksh 10,000/month</p>
+          <p class="price">Ksh 4,000/month</p>
           <p class="location">Stage, quiet neighborhood, 8 min walk</p>
-          <a href="property.html" class="details-btn">View Details</a>
+          <p class="type">Single Room</p>
+          <a href="./houses/gemstone.html" class="details-btn">View Details</a>
         </div>
         <!-- Brookville (Stage) -->
         <div class="listing-card">
           <img src="images/brookville.jpg" alt="Brookville House">
           <h4>Brookville</h4>
-          <p class="price">Ksh 14,000/month</p>
+          <p class="price">Ksh 10,000/month</p>
           <p class="location">Stage, modern apartment, 12 min walk</p>
-          <a href="property.html" class="details-btn">View Details</a>
+          <p class="type">Apartment</p>
+          <a href="./houses/brookville.html" class="details-btn">View Details</a>
         </div>
         <!-- Joy (Stage) -->
         <div class="listing-card">
           <img src="images/joy.jpg" alt="Joy House">
           <h4>Joy</h4>
-          <p class="price">Ksh 9,000/month</p>
+          <p class="price">Ksh 3,500/month</p>
           <p class="location">Stage, budget-friendly, 7 min walk</p>
-          <a href="property.html" class="details-btn">View Details</a>
+          <p class="type">Single Room</p>
+          <a href="./houses/joy.html" class="details-btn">View Details</a>
         </div>
-        <!-- Guest (Stage) -->
+        <!-- Guest View (Stage) -->
         <div class="listing-card">
           <img src="images/guest.jpg" alt="Guest House">
           <h4>Guest View</h4>
-          <p class="price">Ksh 11,000/month</p>
+          <p class="price">Ksh 6,000/month</p>
           <p class="location">Stage, short-term stays, 5 min walk</p>
-          <a href="property.html" class="details-btn">View Details</a>
+          <p class="type">Bedsitter</p>
+          <a href="./houses/guestview.html" class="details-btn">View Details</a>
         </div>
       </div>
     </section>
@@ -131,5 +135,6 @@
   <footer>
     <p>&copy; 2026 Moi Campus Homes. All rights reserved.</p>
   </footer>
+  <script src="js/filter.js"></script>
 </body>
 </html>

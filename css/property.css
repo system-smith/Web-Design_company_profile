@@ -1,43 +1,57 @@
 /* Property Page Specific Styles */
 .property-hero {
-  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 2rem 1rem;
-  text-align: center;
+  background-color: #f9f9f9;
 }
 
-.property-hero h2 {
+.property-image {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.property-info {
+  text-align: center;
+  max-width: 800px;
+}
+
+.property-info h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   color: #2c3e50;
 }
 
-.property-hero .location {
-  font-size: 1.1rem;
-  color: #666;
+.property-info .price {
+  font-size: 1.5rem;
+  color: #e74c3c;
+  font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.property-hero .price {
-  font-size: 1.3rem;
-  color: #e74c3c;
+.property-info .location {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.back-btn {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
   font-weight: bold;
 }
 
-.property-gallery {
-  padding: 1rem;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-}
-
-.gallery-grid img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
+.back-btn:hover {
+  background-color: #2980b9;
 }
 
 .property-details {
@@ -49,24 +63,31 @@
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #2c3e50;
+  text-align: center;
 }
 
-.property-details ul {
-  list-style: none;
-  max-width: 600px;
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  max-width: 800px;
   margin: 0 auto;
 }
 
-.property-details li {
-  margin-bottom: 0.75rem;
-  padding: 0.5rem;
+.detail-item {
   background-color: #f9f9f9;
-  border-radius: 4px;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.detail-item p {
+  margin-bottom: 0.5rem;
 }
 
 .property-description {
   padding: 2rem 1rem;
   background-color: #f9f9f9;
+  text-align: center;
 }
 
 .property-description h3 {
@@ -78,45 +99,51 @@
 .property-description p {
   max-width: 800px;
   margin: 0 auto;
+  text-align: left;
   line-height: 1.6;
 }
 
 .contact-landlord {
   padding: 2rem 1rem;
   background-color: white;
+  text-align: center;
 }
 
 .contact-landlord h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #2c3e50;
-  text-align: center;
 }
 
 .contact-form {
   max-width: 500px;
   margin: 0 auto;
+  text-align: left;
 }
 
-.form-group {
+.contact-form .form-group {
   margin-bottom: 1rem;
 }
 
-.form-group label {
+.contact-form label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
-.form-group input,
-.form-group textarea {
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-button[type="submit"] {
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
   background-color: #3498db;
   color: white;
   padding: 0.75rem 1.5rem;
@@ -124,10 +151,8 @@ button[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   font-size: 1rem;
-  display: block;
-  margin: 0 auto;
 }
 
-button[type="submit"]:hover {
+.contact-form button:hover {
   background-color: #2980b9;
 }

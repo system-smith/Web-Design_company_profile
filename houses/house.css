@@ -1,0 +1,45 @@
+/* House Container */
+.house-container {
+  max-width: 600px;   /* smaller width for card look */
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center; /* center content */
+}
+
+/* Headings */
+.house-container h1 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+/* Images - card style */
+.house-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Paragraphs */
+.house-container p {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+/* Links (Back button) */
+.house-container a {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #fff;
+  background: #3498db;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.house-container a:hover {
+  background: #2980b9;
+}
